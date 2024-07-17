@@ -1,0 +1,20 @@
+#root {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  width: 100%;
+
+  margin: 0;
+}
+.try {
+  width: 100%;
+}
