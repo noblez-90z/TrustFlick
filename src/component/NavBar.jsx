@@ -8,13 +8,10 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+// import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { makeStyles } from "@mui/styles";
-
 import { List, ListItem, ListItemText } from "@mui/material";
-
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 // const pages = ["Products", "Pricing", "Blog"];
 const pages = [
@@ -31,7 +28,7 @@ const pages = [
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
