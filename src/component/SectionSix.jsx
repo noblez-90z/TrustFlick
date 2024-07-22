@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import facebook from "../image asset/facebook.png";
+import { Link } from "react-router-dom";
 
 const pages = [
   {
@@ -63,7 +64,7 @@ const SectionSix = () => {
           </Typography>
           <List>
             {pages.map((page, index) => (
-              <ListItem button key={index} component="a" href={page.path}>
+              <ListItem button key={index} component={Link} href={page.path}>
                 <ListItemText primary={page.text} />
               </ListItem>
             ))}

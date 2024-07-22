@@ -1,5 +1,6 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import meet from "../image asset/check-image.3f9badad60af66700143.webp";
+import { Link } from "react-router-dom";
 
 const SectionFour = () => {
   return (
@@ -41,6 +42,8 @@ const SectionFour = () => {
         </Typography>
         <Typography>Banking evolved. For life in hyperspeed.</Typography>
         <Button
+          component={Link}
+          to="/Login"
           sx={{
             border: 0,
             borderRadius: 50,

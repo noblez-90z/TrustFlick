@@ -18,7 +18,7 @@ const SectionTwo = () => {
         // height: "800px",
         textAlign: "center",
         backgroundImage: "Linear-gradient(to right bottom, lightgreen,black)",
-        px: { md: "10px", xs: "5px" },
+        px: { md: "10px", xs: "15px" },
         py: "25px",
       }}
     >

@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 // import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { List, ListItem, ListItemText } from "@mui/material";
+import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 // const pages = ["Products", "Pricing", "Blog"];
@@ -116,7 +117,8 @@ const NavBar = () => {
             {pages.map((page, index) => (
               <Button
                 key={index}
-                href={page.path}
+                component={Link}
+                to={page.path}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -180,8 +182,8 @@ const NavBar = () => {
                       <ListItem
                         button
                         key={index}
-                        component="a"
-                        href={page.path}
+                        component={Link}
+                        to={page.path}
                         onClick={handleCloseNavMenu}
                         sx={{
                           /*border: 2, borderColor: "black",*/ width: 500,
