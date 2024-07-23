@@ -237,6 +237,7 @@ const Login = () => {
                 id="fullWidth"
                 sx={{
                   my: "10px",
+                  // width: "100%",
                 }}
                 InputProps={{
                   style: {

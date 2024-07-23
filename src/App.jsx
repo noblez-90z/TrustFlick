@@ -8,7 +8,11 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Container disableGutters sx={{ overflowX: "hidden" }}>
+        <Container
+          maxWidth="100%"
+          disableGutters
+          sx={{ overflowX: "hidden", px: { md: "none" } }}
+        >
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/Login" element={<Login />} />
