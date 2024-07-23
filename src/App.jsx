@@ -2,15 +2,18 @@ import "./App.css";
 import HomePage from "./component/Homepage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./component/Login";
+import { Container } from "@mui/material";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/Login" element={<Login />} />
-        </Routes>
+        <Container disableGutters sx={{ overflowX: "hidden" }}>
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/Login" element={<Login />} />
+          </Routes>
+        </Container>
       </div>
     </Router>
   );

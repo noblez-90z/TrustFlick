@@ -32,6 +32,7 @@ const SectionSix = () => {
         // borderColor: "red",
         color: "GrayText",
         backgroundColor: "black",
+        pt: "10px",
       }}
     >
       <Container
